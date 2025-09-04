@@ -49,15 +49,19 @@ function playGame() {
         game;
         alert(message);
         console.log(message);
-        console.log(`Human score: ${humanScore} \nComputer Score: ${computerScore}`);
+        alert(`Your score: ${humanScore} \nComputer Score: ${computerScore}`);
+        console.log(`Your score: ${humanScore} \nComputer Score: ${computerScore}`);
 
     }   if (humanScore > computerScore) {
+            alert("Congrats! You win!");
             console.log("Congrats! you win!");
         } else if (humanScore < computerScore) {
+            alert("You lose!");
             console.log("You lose!");
         } else {
+            alert("Its a tie!");
             console.log("It's a tie!");
-        }
+        }   alert(`------ FINAL SCORE ------ \nYour score: ${humanScore} \nComputer score: ${computerScore}`);
 }
 
 playGame();
